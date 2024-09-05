@@ -10,7 +10,7 @@ const config: Config = {
   favicon: "/goat-farming/img/icon.png",
 
   url: "https://eco-farm-hub.github.io",  
-  baseUrl: process.env.BASE_URL,
+  baseUrl: "/goat-farming",
 
   organizationName: "eco-farm-hub",
   projectName: "Goat Farming",
