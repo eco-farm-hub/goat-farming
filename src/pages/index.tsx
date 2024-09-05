@@ -10,26 +10,96 @@ import styles from "./index.module.css";
 
 const images = [
   {
-    src: "/slide-images/img-1.jpg",
+    src: "/goat-farming/slide-images/img-1.jpg",
     title: "Welcome to Goat Farming",
     subtitle: "Learn and master the art of sustainable goat farming.",
   },
   {
-    src: "/slide-images/img-2.jpg",
+    src: "/goat-farming/slide-images/img-2.jpg",
     title: "Healthy Herds, Prosperous Farms",
     subtitle:
       "Best practices for raising healthy goats and boosting productivity.",
   },
   {
-    src: "/slide-images/img-3.jpg",
+    src: "/goat-farming/slide-images/img-3.jpg",
     title: "Your Guide to Goat Farming Success",
     subtitle:
       "Discover tips, guides, and resources to grow your goat farming business.",
   },
+  {
+    src: "/goat-farming/slide-images/img-4.jpg",
+    title: "Sustainable Goat Farming",
+    subtitle:
+      "Learn how to raise goats in a sustainable and eco-friendly way.",
+  },
+  {
+    src: "/goat-farming/slide-images/img-5.jpg",
+    title: "Goat Farming for Beginners",
+    subtitle:
+      "Start your goat farming journey with our beginner-friendly guides.",
+  },
+  {
+    src: "/goat-farming/slide-images/img-6.jpg",
+    title: "Profitable Goat Farming",
+    subtitle: "Maximize profits with our expert tips and strategies.",
+  },
+  {
+    src: "/goat-farming/slide-images/img-7.jpg",
+    title: "Goat Farming Business",
+    subtitle:
+      "Grow your goat farming business with our expert guides and resources.",
+  },
+  {
+    src: "/goat-farming/slide-images/img-8.jpg",
+    title: "Goat Farming Resources",
+    subtitle:
+      "Find the best resources and tools to help you succeed in goat farming.",
+  },
+  {
+    src: "/goat-farming/slide-images/img-9.jpg",
+    title: "Goat Farming Tips and Tricks",
+    subtitle:
+      "Discover the best tips and tricks to make your goat farming journey a success.",
+  },
+  {
+    src: "/goat-farming/slide-images/img-10.jpg",
+    title: "Goat Farming for Profit",
+    subtitle:
+      "Learn how to turn your goat farming hobby into a profitable business.",
+  },
+  {
+    src: "/goat-farming/slide-images/img-11.jpg",
+    title: "Goat Farming Guide",
+    subtitle:
+      "Get started with our comprehensive goat farming guide for beginners.",
+  },
+  {
+    src: "/goat-farming/slide-images/img-12.jpg",
+    title: "Goat Farming Made Easy",
+    subtitle:
+      "Simplify your goat farming journey with our easy-to-follow guides and resources.",
+  },
+  {
+    src: "/goat-farming/slide-images/img-13.jpg",
+    title: "Goat Farming Techniques",
+    subtitle:
+      "Master the best goat farming techniques to boost productivity and profits.",
+  },
+  {
+    src: "/goat-farming/slide-images/img-14.jpg",
+    title: "Goat Farming Strategies",
+    subtitle:
+      "Discover the best strategies to grow your goat farming business and achieve success.",
+  },
+  {
+    src: "/goat-farming/slide-images/img-15.jpg",
+    title: "Goat Farming Success",
+    subtitle:
+      "Learn how to succeed in goat farming with our expert tips and resources.",
+  },
 ];
 
 function HomepageHeader() {
-  const { siteConfig } = useDocusaurusContext();
 
   const settings = {
     dots: false,
@@ -38,7 +108,7 @@ function HomepageHeader() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 3000,
+    autoplaySpeed: 2500,
     fade: true,
     arrows: false,
   };
@@ -48,12 +118,15 @@ function HomepageHeader() {
       <Slider {...settings} className="relative h-full w-full">
         {images.map((image, index) => (
           <div key={index} className="relative h-full w-full">
-            {/* Background Image */}
             <div
               className="absolute top-0 left-0 w-full h-full bg-cover bg-center"
-              style={{ backgroundImage: `url(${image.src})` }}
-            >
-              {/* Dark Overlay */}
+              style={{ 
+                background: `url(${image.src})`,
+                backgroundSize: "cover",
+                backgroundPosition: "center",
+                objectFit: "cover",
+              }}
+            >              
               <div className="absolute inset-0 bg-black bg-opacity-50"></div>
             </div>
 

@@ -2,22 +2,22 @@ import { themes as prismThemes } from "prism-react-renderer";
 import type { Config } from "@docusaurus/types";
 import type * as Preset from "@docusaurus/preset-classic";
 import tailwindPlugin from "./plugins/tailwind-config.cjs";
+import 'dotenv/config';
 
 const config: Config = {
   title: "Goat Farming",
   tagline: "A website for goat farming enthusiasts",
-  favicon: "img/icon.png",
+  favicon: "/goat-farming/img/icon.png",
 
-  // Set the production url of your site here
-  url: "http://localhost:3000/",
-  // Set the /<baseUrl>/ pathname under which your site is served
-  // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: "/",
+  url: process.env.URL,  
+  baseUrl: process.env.BASE_URL,
 
-  // GitHub pages deployment config.
-  // If you aren't using GitHub pages, you don't need these.
-  organizationName: "eco-farm-hub", // Usually your GitHub org/user name.
-  projectName: "Goat Farming", // Usually your repo name.
+  organizationName: "eco-farm-hub",
+  projectName: "Goat Farming",
+
+  customFields: {
+    teamEmail: process.env.EMAIL,
+  },
 
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
@@ -72,7 +72,7 @@ const config: Config = {
       title: "Goat Farming",
       logo: {
         alt: "My Site Logo",
-        src: "img/logo.png",
+        src: "/goat-farming/img/logo.png",
       },
       items: [
         {
