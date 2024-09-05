@@ -1,70 +1,38 @@
-import clsx from 'clsx';
-import Heading from '@theme/Heading';
-import styles from '../styles.module.css';
+import React from 'react';
 
-type FeatureItem = {
-  title: string;
-  Svg: React.ComponentType<React.ComponentProps<'svg'>>;
-  description: JSX.Element;
+const features = [
+  {
+    title: "Expert Guides",
+    description: "Access comprehensive guides and resources for sustainable goat farming.",
+    icon: "📘",
+  },
+  {
+    title: "Healthy Goats",
+    description: "Learn how to raise healthy herds with organic farming practices.",
+    icon: "🐐",
+  },
+  {
+    title: "Profitable Farming",
+    description: "Maximize profits with strategies that boost productivity and sustainability.",
+    icon: "💼",
+  },
+];
+
+const HomepageFeatures = () => {
+  return (
+    <div className="flex flex-col items-center py-16">
+      <h2 className="text-3xl font-bold text-center mb-8">Why Choose Us?</h2>
+      <div className="flex flex-wrap justify-center space-x-4">
+        {features.map((feature, idx) => (
+          <div key={idx} className="p-6 max-w-sm bg-[var(--ifm-cards-background-color)] shadow-lg rounded-lg">
+            <div className="text-4xl">{feature.icon}</div>
+            <h3 className="text-2xl font-semibold mt-4">{feature.title}</h3>
+            <p className="mt-2">{feature.description}</p>
+          </div>
+        ))}
+      </div>
+    </div>
+  );
 };
 
-const FeatureList: FeatureItem[] = [
-    {
-      title: 'Easy to Use',
-      Svg: require('@site/static/img/undraw_docusaurus_mountain.svg').default,
-      description: (
-        <>
-          Docusaurus was designed from the ground up to be easily installed and
-          used to get your website up and running quickly.
-        </>
-      ),
-    },
-    {
-      title: 'Focus on What Matters',
-      Svg: require('@site/static/img/undraw_docusaurus_tree.svg').default,
-      description: (
-        <>
-          Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-          ahead and move your docs into the <code>docs</code> directory.
-        </>
-      ),
-    },
-    {
-      title: 'Powered by React',
-      Svg: require('@site/static/img/undraw_docusaurus_react.svg').default,
-      description: (
-        <>
-          Extend or customize your website layout by reusing React. Docusaurus can
-          be extended while reusing the same header and footer.
-        </>
-      ),
-    },
-  ];
-  
-  function Feature({title, Svg, description}: FeatureItem) {
-    return (
-      <div className={clsx("col col--4")}>
-        <div className="text--center bg-blue-600">
-          <Svg className={styles.featureSvg} role="img" />
-        </div>
-        <div className="text--center padding-horiz--md">
-          <Heading as="h3">{title}</Heading>
-          <p>{description}</p>
-        </div>
-      </div>
-    );
-  }
-
-export default function Features(): JSX.Element {
-    return (
-      <section className={styles.features}>
-        <div className="container">
-          <div className="row">
-            {FeatureList.map((props, idx) => (
-              <Feature key={idx} {...props} />
-            ))}
-          </div>
-        </div>
-      </section>
-    );
-  }
+export default HomepageFeatures;
