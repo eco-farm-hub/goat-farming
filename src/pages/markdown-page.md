@@ -1,4 +1,5 @@
 ---
+id: markdown-page
 title: Markdown page example
 ---
 
