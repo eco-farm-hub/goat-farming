@@ -1,7 +1,7 @@
 import Link from "@docusaurus/Link";
 import useDocusaurusContext from "@docusaurus/useDocusaurusContext";
 import Layout from "@theme/Layout";
-import HomepageFeatures from "@site/src/components/Homepage/Features";
+import {Features, About, Services} from "@site/src/components/Homepage";
 import Heading from "@theme/Heading";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
@@ -108,7 +108,7 @@ function HomepageHeader() {
     slidesToShow: 1,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2500,
+    autoplaySpeed: 3000,
     fade: true,
     arrows: false,
   };
@@ -162,7 +162,9 @@ export default function Home(): JSX.Element {
     >
       <HomepageHeader />
       <main>
-        <HomepageFeatures />
+        <Features />
+        <About />
+        <Services />
       </main>
     </Layout>
   );
