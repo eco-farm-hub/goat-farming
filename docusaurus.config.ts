@@ -81,8 +81,7 @@ const config: Config = {
           position: "left",
           label: "Tutorial",
         },
-        { to: "/goat-farming/about", label: "About", position: "left" },
-        { to: "/goat-farming//blogs", label: "Blogs", position: "left" },
+        { to: "/blog/", label: "Blog", position: "left" },
         {
           href: "https://github.com/eco-farm-hub",
           label: "GitHub",
