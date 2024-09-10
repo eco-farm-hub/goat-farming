@@ -116,7 +116,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 ## 📞 Contact
 
 - **Website**: [/goat-farming/](https://eco-farm-hub.github.io/goat-farming/)
-- **Email**: support@goatfarming.com
+- **Email**: codeharborhub@gmail.com
 - **GitHub**: [Goat Farming Repo](https://github.com/eco-farm-hub/goat-farming)
 
 ---
