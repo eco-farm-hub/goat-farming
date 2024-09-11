@@ -140,7 +140,7 @@ function HomepageHeader() {
               <div className="m-8 mb-24">
                 <Link
                   className="bg-green-600 text-white px-6 py-3 rounded-lg text-lg md:text-xl transition-transform transform hover:scale-105 duration-300 ease-in-out hover:text-white hover:bg-green-700 hover:no-underline"
-                  to="/docs/intro"
+                  to="/docs/"
                 >
                   Goat Farming Guide - 5min ⏱️
                 </Link>
