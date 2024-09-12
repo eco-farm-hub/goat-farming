@@ -1,0 +1,14 @@
+{
+  "version.label": {
+    "message": "अगला",
+    "description": "वर्तमान version के लिए लेबल"
+  },
+  "sidebar.tutorialSidebar.category.Introduction": {
+    "message": "परिचय",
+    "description": "साइडबार ट्यूटोरियलसाइडबार में श्रेणी परिचय के लिए लेबल"
+  },
+  "sidebar.tutorialSidebar.category.Introduction.link.generated-index.description": {
+    "message": "बकरी पालन एवं बकरी पालन व्यवसाय का परिचय",
+    "description": "साइडबार ट्यूटोरियलसाइडबार में श्रेणी परिचय के लिए जेनरेट-इंडेक्स पेज विवरण"
+  }
+}

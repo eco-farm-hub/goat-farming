@@ -1,0 +1,18 @@
+{
+  "title": {
+    "message": "बकरी पालन",
+    "description": "The title in the navbar"
+  },
+  "logo.alt": {
+    "message": "बकरी पालन Logo",
+    "description": "The alt text of navbar logo"
+  },
+  "item.label.Tutorial": {
+    "message": "गाइड",
+    "description": "Navbar item with label Tutorial"
+  },
+  "item.label.Blog": {
+    "message": "ब्लॉग",
+    "description": "Navbar item with label Blog"
+  }
+}

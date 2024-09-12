@@ -16,7 +16,7 @@ const AboutSection = () => {
           {/* Left Side: Image */}
           <div className="flex justify-center items-center">
             <img
-              src="/goat-farming/img/org-bg-rm.png"
+              src="img/org-bg-rm.png"
               alt="About Our Organization"
               className="w-full h-auto object-cover rounded-lg shadow-lg"
             />

@@ -8,7 +8,7 @@ keywords: [goat farming history, history of goat farming, goat farming origins, 
 sidebar_position: 2
 ---
 
-![Goat Farming](../assets/img/history-banner.png)
+<!-- ![Goat Farming](../assets/img/history-banner.png) -->
 
 Welcome to the fascinating world of **Goat Farming History**! Goats have been an integral part of human civilization for thousands of years, providing milk, meat, fiber, and companionship to farmers and communities around the world. In this guide, we'll explore the origins of goat farming, its evolution through ancient civilizations, and the modern practices and technologies that have transformed the industry.
 
