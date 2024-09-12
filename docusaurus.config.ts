@@ -25,9 +25,19 @@ const config: Config = {
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
+  // i18n: {
+  //   defaultLocale: "en",
+  //   locales: ["en"],
+  // },
+
   i18n: {
-    defaultLocale: "en",
-    locales: ["en"],
+    defaultLocale: 'en',
+    locales: ['en', 'hi'],
+    localeConfigs: {
+      en: {
+        htmlLang: 'en-GB',
+      },
+    },
   },
 
   plugins: [tailwindPlugin],
@@ -72,7 +82,7 @@ const config: Config = {
       title: "Goat Farming",
       logo: {
         alt: "My Site Logo",
-        src: "/goat-farming/img/logo.png",
+        src: "/img/logo.png",
       },
       items: [
         {
@@ -83,10 +93,14 @@ const config: Config = {
         },
         { to: "/blog/", label: "Blog", position: "left" },
         {
-          href: "https://github.com/eco-farm-hub",
-          label: "GitHub",
-          position: "right",
+          type: 'localeDropdown',
+          position: 'right',
         },
+        // {
+        //   href: "https://github.com/eco-farm-hub",
+        //   label: "GitHub",
+        //   position: "right",
+        // },
       ],
     },
     footer: {

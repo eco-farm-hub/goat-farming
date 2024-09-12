@@ -8,7 +8,7 @@ keywords: [goat farming, goat farming overview, goat farming guide, goat farming
 sidebar_position: 1
 ---
 
-![Goat Farming](../assets/img/intro-banner.png)
+<!-- ![Goat Farming](../assets/img/intro-banner.png) -->
 
 Welcome to the world of **Goat Farming**, a sustainable, profitable, and rewarding agricultural practice. Whether you're looking to raise goats for dairy, meat, fiber, or as part of a sustainable farming initiative, this guide will help you get started with the right knowledge and tools.
 
